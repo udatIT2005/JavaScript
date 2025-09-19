@@ -1,0 +1,18 @@
+1. Tìm dãy con lớn nhất
+1.1. Duyệt toàn bộ (brute force)
+1.2. Duyệt toàn bộ có cải tiến
+1.3. Thuật toán đệ quy
+1.1.4. Thuật toán quy hoạch động
+2.Thuật toán và độ phức tạp của thuật toán 
+2.1. Thuật toán : 
+    + Đầu vào (Input)
+    + Đầu ra (Output)
+    + Chính xác (Precision)
+    + Hữu hạn (Finitences)
+    + Đơn trị (UNiqueness)
+    + Tổng quát (Generality)
+2.2. Độ phức tạp của thuật toán 
+    + ) Dễ hiểu dễ cài đặt dễ sửa đổi
+    + ) Thời gian sử dụng CPU 
+    + ) Bộ nhớ 
+2.3. Thuật toán sắp xếp
