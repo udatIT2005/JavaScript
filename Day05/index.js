@@ -46,7 +46,13 @@
 // }
 // print(2, 10);
 
-for (let i = 1; i < 10; i++) {
-  if (i % 2 !== 0) continue;
-  console.log(i);
-}
+// for (let i = 1; i < 10; i++) {
+//   if (i % 2 !== 0) continue;
+//   console.log(i);
+// }
+// const arr = ["a", "b", "c"];
+
+// for (let value in arr) {
+//   console.log(value); // a, b, c
+//   console.log(arr[value]); // a, b, c
+// }

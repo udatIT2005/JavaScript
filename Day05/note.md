@@ -22,3 +22,7 @@ Nếu điều kiện sai → dừng ngay, không chạy thêm.
 Chạy code trong {} ít nhất 1 lần trước.
 
 Sau đó mới kiểm tra điều kiện. Nếu còn đúng thì lặp tiếp.
+
+###### For ... in duyệt key / index hay dùng cho Object
+
+###### For ... of duyệt value hay dùng cho array, string
