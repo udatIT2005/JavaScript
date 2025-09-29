@@ -1,0 +1,55 @@
+* Array (mảng) là gì ? 
+ - là tập hợp các giá trị, lưu trong 1 biến duy nhất 
+ Ví dụ : thay vì tạo biến riêng lẻ  
+ 
+ ** Các phương thức của array trong Javascript
+ 1. Thêm Xóa phần tử 
+ +) push() -> Thêm vào cuối mảng 
+ +) unshift() -> Thêm vào đầu mảng 
+ +) pop() -> Xóa phần tử cuối mảng 
+ +) shift() -> Xóa phần tử đầu tiên 
+ +) concat() -> Nối nhiều mảng thành 1 
+ +) slice(start, end) -> cắt mảng (không thay đổi mảng gốc)
+ +) splice(start, deleteCount, item1, item2)
+ 
+ 2. Tìm kiếm / Kiểm tra 
+ +) indexOf(value) -> Tìm vị trí đầu tiên 
+ +) LastIndexOf(value) -> Tìm vị trí cuối cùng
+ +) includes(value) -> Kiểm tra có tồn tại không
+ +) find(callback) -> Tìm phần tử đầu tiên thoải mãn điều kiện 
+ +) findLast(value) -> Tìm phần tử cuối thỏa điều kiện.
+ +) findIndex(callback) -> Tìm index phần tử đầu tiên thoải mãn điều kiện 
+ +) findLastIndex(callback) -> Tìm index cuối thoải mãn điều kiện 
+ +) some (callback) -> Trả về true nếu ít nhất 1 phần tử thỏa mãn 
+ +) every (callback) -> Trả về true nếu tất cả phần tử thỏa mãn 
+
+ 3. Duyệt mảng
+ +) forEach(callback) -> duyệt từng phần tử.
+ +) map(callback) -> Tạo mảng mới từ mảng cũ.
+ +) filter(callback) => Lọc ra phần tử thoải mãn điều kiện .
+ +) reduce(callback, initialValue) -> gộp giá trị thành 1 (ví dụ tính tổng)
+ +) reduceRight(callback, initialValue) -> Giống reduce nhưng từ phải sang trái 
+ 
+ 4. Sắp xếp và biến đổi 
+ +) Sort(callback) -> Sắp xếp (mặc định theo string)
+ +) ToSort(callback) -> Trả về mảng mới đã sắp xếp (Không thay đổi mảng gốc)
+ +) Reverce() -> Đảo ngược mảng 
+ +) ToReverce() -> Đảo ngược mảng và trả về mảng mới (không thay đổi mảng gốc)
+ +) Flat(depth) -> Làm phảng mảng con 
+ +) FlatMap(callback) -> Vừa map vừa flat 1 cấp 
+ +) fill(value, start, end) -> Gán giá trị cho toàn bộ hoặc 1 đoạn mảng 
+
+ 5. Chuyển đổi mảng sang chuỗi
+ +) join(separator) -> gộp mảng thành chuỗi
+ +) toString()-> biến mảng thành chuỗi 
+ +) toLocaleString()-> biến mảng thành chuỗi theo ngôn ngữ
+
+ 6. Thuộc tính đặc biệt 
+ +) length -> độ dài mảng 
+ +) typeof -> Kiểm tra kiểu dữ liệu
+ 
+ 7. Iterator & ES6 +
+ +) keys() -> Lấy interator các chỉ số
+ +) values() -> Lấy interator các chỉ số
+ +) entries() -> Lấy iterator [index, value].
+
