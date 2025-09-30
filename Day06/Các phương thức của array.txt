@@ -4,18 +4,18 @@
  
  ** Các phương thức của array trong Javascript
  1. Thêm Xóa phần tử 
- +) push() -> Thêm vào cuối mảng 
- +) unshift() -> Thêm vào đầu mảng 
- +) pop() -> Xóa phần tử cuối mảng 
- +) shift() -> Xóa phần tử đầu tiên 
- +) concat() -> Nối nhiều mảng thành 1 
- +) slice(start, end) -> cắt mảng (không thay đổi mảng gốc)
- +) splice(start, deleteCount, item1, item2)
+ +) push() -> Thêm vào cuối mảng : done
+ +) unshift() -> Thêm vào đầu mảng : done
+ +) pop() -> Xóa phần tử cuối mảng : done
+ +) shift() -> Xóa phần tử đầu tiên : done
+ +) concat() -> Nối nhiều mảng thành 1 : done
+ +) slice(start, end) -> cắt mảng (không thay đổi mảng gốc) : done
+ +) splice(start, deleteCount, item1, item2) : done
  
  2. Tìm kiếm / Kiểm tra 
- +) indexOf(value) -> Tìm vị trí đầu tiên 
- +) LastIndexOf(value) -> Tìm vị trí cuối cùng
- +) includes(value) -> Kiểm tra có tồn tại không
+ +) indexOf(value) -> Tìm vị trí đầu tiên : done
+ +) LastIndexOf(value) -> Tìm vị trí cuối cùng : done
+ +) includes(value) -> Kiểm tra có tồn tại không : done
  +) find(callback) -> Tìm phần tử đầu tiên thoải mãn điều kiện 
  +) findLast(value) -> Tìm phần tử cuối thỏa điều kiện.
  +) findIndex(callback) -> Tìm index phần tử đầu tiên thoải mãn điều kiện 
@@ -33,23 +33,38 @@
  4. Sắp xếp và biến đổi 
  +) Sort(callback) -> Sắp xếp (mặc định theo string)
  +) ToSort(callback) -> Trả về mảng mới đã sắp xếp (Không thay đổi mảng gốc)
- +) Reverce() -> Đảo ngược mảng 
- +) ToReverce() -> Đảo ngược mảng và trả về mảng mới (không thay đổi mảng gốc)
+ +) Reverce() -> Đảo ngược mảng : done
+ +) ToReverce() -> Đảo ngược mảng và trả về mảng mới (không thay đổi mảng gốc) : done
  +) Flat(depth) -> Làm phảng mảng con 
  +) FlatMap(callback) -> Vừa map vừa flat 1 cấp 
  +) fill(value, start, end) -> Gán giá trị cho toàn bộ hoặc 1 đoạn mảng 
 
  5. Chuyển đổi mảng sang chuỗi
- +) join(separator) -> gộp mảng thành chuỗi
- +) toString()-> biến mảng thành chuỗi 
+ +) join(separator) -> gộp mảng thành chuỗi : done
+ +) toString()-> biến mảng thành chuỗi : done
  +) toLocaleString()-> biến mảng thành chuỗi theo ngôn ngữ
 
  6. Thuộc tính đặc biệt 
- +) length -> độ dài mảng 
- +) typeof -> Kiểm tra kiểu dữ liệu
+ +) length -> độ dài mảng : done
+ +) typeof -> Kiểm tra kiểu dữ liệu : done 
  
  7. Iterator & ES6 +
  +) keys() -> Lấy interator các chỉ số
  +) values() -> Lấy interator các chỉ số
  +) entries() -> Lấy iterator [index, value].
 
+## Empty : rỗng không tồn tại nhưng vẫn chiếm không gian
+
+## underfined : có ông trong mảng nhưng giá trị chưa xác định
+
+## null : ô trong mảng có giá trị null
+
+## length là số phần tử trong mảng
+
+### Truthy và falsy trong Js
+
+- Trong điều kiện if() không cần phải true/false, nó sẽ tự động ép kiểu
+
++) Ép kiểu chủ động là console.log(typeOf Number())
++) Ép kiểu tự độnng : Falsy gồm : false, null, underfine, NaN, " ", 0, -0 ; 0n
+Truthy : tất cả các giá trị còn lại (số khác 0, string, array, object,...)
