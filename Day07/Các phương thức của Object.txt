@@ -1,0 +1,5 @@
+Phương thức cơ bản của Object 
+1. Phương thức tĩnh 
+- Object.keys(obj) -> trả về mảng chứa tất cả key của object 
+- Object.values(obj) -> trả về mảng chứa tất cả values
+- Object.entries(obj) -> trả về mảng dạng [key : value]
