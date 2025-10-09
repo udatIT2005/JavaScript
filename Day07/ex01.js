@@ -7,6 +7,12 @@ const myInfor = {
     console.log(`My full Name is ${this.fullName}`);
   },
 };
+// console.log(
+//   setInterval(() => {
+//     console.log("alo");
+//   }, 3000)
+// );
 console.log(myInfor);
+
 myInfor.showAge();
 myInfor.showName();

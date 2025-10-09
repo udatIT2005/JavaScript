@@ -53,3 +53,21 @@ Stack chỉ giữ cái “địa chỉ nhà” của object trong heap thôi.
 
 1. Mark (Đánh dấu)
 2. Sweep (quét)
+
+const myInfor = {
+name: "Dat",
+name: "Nmae",
+hometowm: "Vạn kim ",
+};
+// Thêm
+myInfor.address = " Hà NỘi";
+// Sửa
+myInfor.address = " Hồ CHí Minh";
+// Xóa
+delete myInfor.name;
+
+// Thêm sửa xóa với Object
+
+// Không thể áp dụng vòng lặp for cho object
+// Dùng được for in với Object
+// Dùng for of với Object

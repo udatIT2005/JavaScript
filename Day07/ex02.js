@@ -19,7 +19,7 @@ console.log(Object.entries(myInfor));
 
 // Không thể áp dụng vòng lặp for cho object
 // Dùng được for in với Object
+// Dùng for of với Object
 for (key of myInfor) {
   console.log(key);
 }
-// Dùng for of với Object
