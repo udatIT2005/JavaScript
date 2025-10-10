@@ -1,0 +1,6 @@
+Quản lý thời gian 
+ Sai lần lớn nhất của tấm chiếu mới :
++) Hiệu ứng bận rộn giả tạo (Làm không có dealine)
++) Phân tán nhiệm vụ (Không lên làm việc này nghĩ việc khác)
++) Làm đa nhiệm vụ ()
++) Hiệu ứng bẫy năng xuất (Phải tập trung hết sức)

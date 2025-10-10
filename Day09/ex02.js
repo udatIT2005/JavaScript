@@ -4,8 +4,6 @@ const [red, , blue] = colors;
 console.log(red);
 console.log(blue);
 // Bài 2 : const user = { name: "Dat", age: 21, city: "HN" };
-// 👉 Dùng destructuring lấy ra name và city.
-
 const user = { name: "Dat", age: 21, city: "HN" };
 const { name, city } = user;
 console.log(name);
