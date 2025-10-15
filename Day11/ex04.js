@@ -1,11 +1,11 @@
 /**
- * Some : callback : Tìm phần tử trong mảng nếu mà
+ * Some : callback : Kiểm tra điều kiện trong mảng nếu mà
  * có 1 phần tử đúng trả về true
  * input : item/ index/ arr
  * output: Boolean
  */
 /**
- * Every : callback Tìm phần tử trong mảng nếu
+ * Every : callback Kiểm tra điều kiện trong mảng nếu
  * mà cả mảng mà đúng thì mới trả về true còn chỉ
  * cần có 1 thuộc tính sai thì false
  * input : item/ index/ arr
