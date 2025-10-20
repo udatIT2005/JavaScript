@@ -10,7 +10,7 @@
 
 ### dynamic website : trang web động
 
-# DOM : là mô hình tài liệu dạng đối tượng có cấu trúc là cây thư mục và các thành phần chính gồm : root element, element , attribute, text
+# DOM : là mô hình tài liệu dạng đối tượng có cấu trúc là cây thư mục (tree) và các thành phần chính gồm : root element, element , attribute, text
 
 ## Các thao tác của Element Node
 
@@ -26,7 +26,7 @@
 - removeElement() : Xóa element
 - appendchild() : Hiển thị lên màn hình
 
-### Thao tác với Attibute node
+### Thao tác với Attibute (thuộc tính) node
 
 - style
 - csstext
