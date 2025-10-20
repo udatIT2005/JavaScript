@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chúc Mừng 20-10</title>
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffd1ff);
+        background-size: 400% 400%;
+        animation: gradientBG 8s ease infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+        overflow: hidden;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .card {
+        text-align: center;
+        padding: 30px 50px;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 2s ease;
+      }
+
+      h1 {
+        color: #ff0066;
+        text-shadow: 2px 2px 10px rgba(255, 0, 100, 0.6);
+        animation: glow 2s infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #ff6699, 0 0 20px #ff6699;
+        }
+        to {
+          text-shadow: 0 0 20px #ff0066, 0 0 30px #ff0066;
+        }
+      }
+
+      p {
+        color: #5a005a;
+        font-size: 22px;
+        font-weight: bold;
+        min-height: 40px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .heart {
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        animation: fly 5s linear infinite;
+      }
+
+      @keyframes fly {
+        from {
+          transform: translateY(100vh) scale(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-10vh) scale(1.2);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>💐 Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10 💐</h1>
+      <p id="text"></p>
+    </div>
+
+    <script>
+      let texts = [
+        "Chúc các bà, các mẹ luôn mạnh khỏe, hạnh phúc và bình an!",
+        "Chúc một nửa thế giới luôn xinh đẹp và rạng rỡ!",
+        "Cảm ơn vì đã luôn yêu thương và hy sinh thầm lặng!",
+        "Chúc bạn luôn tự tin, thành công và tỏa sáng!",
+        "20/10 – Chúc phái đẹp luôn được trân trọng và yêu thương!",
+      ];
+
+      let text = "";
+      let textElement = document.getElementById("text");
+
+      function randomText() {
+        return texts[Math.floor(Math.random() * texts.length)];
+      }
+
+      function showPre() {
+        text = randomText();
+        textElement.innerHTML = "";
+        let index = 0;
+
+        let textTime = setInterval(() => {
+          textElement.innerHTML += text[index];
+          index++;
+          if (index === text.length) {
+            clearInterval(textTime);
+            setTimeout(showBefore, 1000);
+          }
+        }, 100);
+      }
+
+      function showBefore() {
+        let index = text.length;
+        let textReverse = setInterval(() => {
+          textElement.innerHTML = text.slice(0, index);
+          index--;
+          if (index < 0) {
+            clearInterval(textReverse);
+            setTimeout(showPre, 500);
+          }
+        }, 80);
+      }
+
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 5000);
+      }
+
+      setInterval(createHeart, 500);
+      showPre();
+    </script>
+  </body>
+</html>
