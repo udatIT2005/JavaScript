@@ -37,3 +37,4 @@ console.log(myStt.replace("js", "JavaScprits"));
 console.log(myStt);
 
 console.log({ String });
+//interface : giao diện 
