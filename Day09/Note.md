@@ -12,4 +12,11 @@
 
 - tạo ra 1 instance : 1 bản sao được tạo ra từ nguyên mẫu contructer function
 
+## Spread, Destructuring Rest
+
+- Spread : rải các giá trị có sẵn vào một object ,
+- array mới nếu trùng key thì sẽ được ghi đè
+- Destructuring : lấy các giá trị từ mảng hoặc object 1 cách nhanh gọn .
+- Rest (phần còn lại ) : dùng để gom phần còn lại của dữ liệu vào thành 1 biến
+
 # Học thêm về đệ quy và chia để trị
