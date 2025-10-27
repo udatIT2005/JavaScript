@@ -51,6 +51,12 @@ JSON(Javascript Object Notaion) là 1 chuỗi có định dạng dữ liệu , d
 JSON.stringify(arr) : chuyển object thành chuỗi và là deep copy
 JSON.parse(arr) : chuyển chuỗi JSON thành object
 
+JSON :
+
+- Không xử lý được function
+- Không lưu thuộc tính có value là undefined
+- NaN khi lưu được covert thành null
+
 #### FETCH là gì ?
 
 là hàm tích hợp sẵn trong JS dùng để gọi dữ liệu từ server

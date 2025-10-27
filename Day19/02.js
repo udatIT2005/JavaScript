@@ -39,4 +39,17 @@ const arr1 = {
   limit: 30,
 };
 localStorage.setItem("products", JSON.stringify(arr1));
-JSON.parse(arr);
+// JSON.parse(arr);
+
+const animals = {
+  park: [
+    {
+      id: 1,
+      name: "dog",
+      age: 10,
+    },
+  ],
+};
+console.log(JSON.stringify(animals));
+
+localStorage.setItem("park", JSON.stringify(animals));
